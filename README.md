@@ -1,6 +1,7 @@
 # RobloxLauncherPy
 
 * Launches roblox from a python script
+* Pretty barebones
 * Proof of concept
 * Doesn't do much else
 * Most likely wont be worked on if it breaks
