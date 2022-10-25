@@ -1,4 +1,6 @@
 # RobloxLauncherPy
+Look into LaunchingMethods for snippets of code
+#Features
 * Launches roblox from a python script
 * Pretty barebones
 * Proof of concept
