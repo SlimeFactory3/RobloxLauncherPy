@@ -1,5 +1,5 @@
 # RobloxLauncherPy
-Look into LaunchingMethods for snippets of code
+
 # Features
 * Launches roblox from a python script
 * Pretty barebones
@@ -8,3 +8,4 @@ Look into LaunchingMethods for snippets of code
 * Most likely wont be worked on if it breaks
 * Feel free to use
 * Inspired from https://github.com/ic3w0lf22/Roblox-Account-Manager
+* Look into LaunchingMethods for snippets of code to use
