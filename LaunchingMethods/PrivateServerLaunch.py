@@ -52,6 +52,6 @@ PlaceID=PlaceID[:-1]
 #print(PlaceID)
 
 PlaceLauncherURL=urllib.parse.quote(f"https://assetgame.roblox.com/game/PlaceLauncher.ashx?request=RequestGame&browserTrackerId={BrowserTrackerID}&placeId={PlaceID}&accessCode={AccessCode[0]}&linkCode={LinkCode[0]}",safe='')#this could probably be merged into the webbrowser.open
-print(PlaceLauncherURL)
+#print(PlaceLauncherURL)
 
 webbrowser.open(f"roblox-player:1+launchmode:play+gameinfo:{Ticket}+launchtime:{LaunchTime}+placelauncherurl:{PlaceLauncherURL}+browsertrackerid:{BrowserTrackerID}+robloxLocale:en_us+gameLocale:en_us+channel:") #execution
