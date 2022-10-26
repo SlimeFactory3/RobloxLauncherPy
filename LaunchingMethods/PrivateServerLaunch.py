@@ -23,7 +23,7 @@ def rbx_request(method, url, **kwargs):
     return request
 
 
-PrivateServerLink="link"
+PrivateServerLink="link"#replace with link here
 
 req = rbx_request("POST", "https://auth.roblox.com/v1/authentication-ticket/")
 req2 = rbx_request("GET",PrivateServerLink)
@@ -46,7 +46,9 @@ BrowserTrackerID = str(random.randint(100000, 120000)) + str(random.randint(1000
 Ticket=req.headers.get('rbx-authentication-ticket')
 #print(Ticket)
 
-PlaceID=123123123 #have this be the same as the placeid on PrivateServerLink; i will most likely implement a fix to this in a day or so to be automatic
+PlaceID=re.findall("games/(.*\?)",PrivateServerLink)#i just gave up on regex here tbh
+PlaceID=PlaceID[0]
+PlaceID=PlaceID[:-1]
 #print(PlaceID)
 
 PlaceLauncherURL=urllib.parse.quote(f"https://assetgame.roblox.com/game/PlaceLauncher.ashx?request=RequestGame&browserTrackerId={BrowserTrackerID}&placeId={PlaceID}&accessCode={AccessCode[0]}&linkCode={LinkCode[0]}",safe='')#this could probably be merged into the webbrowser.open
