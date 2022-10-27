@@ -39,9 +39,6 @@ Ticket=req.headers.get("rbx-authentication-ticket")
 PlaceID=189707 #currently launches into natural disaster survival; change this to launch into a diffrent game
 #print(PlaceID)
 
-PlaceLauncherURL=urllib.parse.quote(f"https://assetgame.roblox.com/game/PlaceLauncher.ashx?request=RequestGame&browserTrackerId={BrowserTrackerID}&placeId={PlaceID}&isPlayTogetherGame=false",safe='')#this could probably be merged into the webbrowser.open
-#print(PlaceLauncherURL)
-
 RobloxVersion=req2.text
 RobloxVersion=re.findall(r"([a-zA-Z]+(([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[eE]([+-]?\d+))?[a-zA-Z]+)+)",RobloxVersion)
 RobloxVersion=RobloxVersion[0][0]
